@@ -1,0 +1,29 @@
+{
+  "name": "esplanada-watermark",
+  "version": "1.0.0",
+  "description": "Service to add Esplanada watermark",
+  "repository": "github:delasy/esplanada-watermark",
+  "author": "Aaron Delasy <aaron@delasy.com>",
+  "private": true,
+  "homepage": "https://esplanada-watermark-ank253.herokuapp.com/",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.0.0",
+    "jszip": "^3.5.0",
+    "multer": "^1.4.2",
+    "sharp": "^0.25.4"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "standard": "^14.3.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "standard"
+  }
+}
